@@ -20,9 +20,6 @@
 
 .navbar__links {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   list-style: none;
 }
 
@@ -61,7 +58,7 @@
   display: none;
 }
 
-.navbar__smallscreen-overlay {
+.navbar__smallscreen__overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -73,7 +70,7 @@
   z-index: 5;
 }
 
-.overlay__close {
+.overlay__close__btn {
   font-size: 1rem;
   color: var(--color-golden);
   cursor: pointer;
@@ -82,7 +79,7 @@
   right: 20px;
 }
 
-.navbar__smallscreen_links {
+.navbar__smallscreen__links {
   list-style: none;
 }
 
