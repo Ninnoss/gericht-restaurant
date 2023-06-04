@@ -17,7 +17,7 @@ const Navbar = () => {
         />
       </div>
 
-      <ul className="navbar__links">
+      <ul className="navbar__links flex__center">
         <li className="p__opensans">
           <a href="#home">Home</a>
         </li>
@@ -53,20 +53,21 @@ const Navbar = () => {
 
       <div className="navbar__smallscreen">
         <GiHamburgerMenu
+          style={{ cursor: 'pointer' }}
           color="#FFF"
           size={'1.4rem'}
           onClick={() => setToggleMenu(true)}
         />
 
         {toggleMenu && (
-          <div className="navbar__smallscreen-overlay flex__center slide-bottom">
+          <div className="navbar__smallscreen__overlay flex__center slide-bottom">
             <MdOutlineRestaurantMenu
               size={'2rem'}
-              className="overlay__close"
+              className="overlay__close__btn"
               onClick={() => setToggleMenu(false)}
             />
 
-            <ul className="navbar__smallscreen_links">
+            <ul className="navbar__smallscreen__links">
               <li className="p__opensans">
                 <a href="#home">Home</a>
               </li>
